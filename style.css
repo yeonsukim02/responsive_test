@@ -1,0 +1,24 @@
+* {box-sizing:border-box; margin:0; padding:0; font-size:1.0em; color:#000; text-decoration:none;}
+header {display:flex; justify-content: space-between; padding:0 15px; align-items: center; height:60px; position:relative;}
+header a {text-transform: uppercase; font-weight:600; margin:0 5px; width: 150px;}
+header a img{width: 100%;}/* 1. css수정-로고 이미지 100% 추가 */
+header h1 {width:150px; position:absolute; left:50%; transform:translateX(-50%);}
+main .visual {
+    background:url(./images/visual.gif) center 6%;/* 2. css수정-폴더경로이탈, . 1개 삭제  */
+    background-size: cover;
+    /* 이미지크기 수정 cover */
+    height:350px; width:100%;
+}
+main h2 {text-align:center; padding:30px 0; text-transform: capitalize;}
+main .link {max-width:1400px; margin:0 auto; display:flex;}
+/* 3. css수정- 중앙정렬 margin: 0 auto */
+main .link a img {width: 100%;}
+    /* 이미지크기 수정 width: 100% */
+
+@media screen and (max-width:1400px){
+    header .left, 
+    header .right {display:none;}
+    main .link {padding: 0 15px;}
+}
+/* 4. css수정-태그 안닫힘, } 추가 */
+/* 4. css수정- ; 삭제 */
